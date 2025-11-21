@@ -1,10 +1,13 @@
 # Kafka Order System (Python)
 
-## Overview
+🌐 ## Overview
 This project implements a Kafka-based system producing and consuming Avro order messages with:
 - Real-time aggregation (running average of prices)
 - Retry logic for transient failures
 - Dead Letter Queue (DLQ) for permanent failures
+
+## 📝 Script
+The script generates random orders like Item1, Item2, Item3, Item4 with random prices. If a price is above 95, the consumer retries processing it up to three times. After three failures, the order is sent to the Dead Letter Queue, while valid ones update the running average.
 
 ## 🚀 Quick Start
 
