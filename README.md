@@ -1,6 +1,6 @@
 # Kafka Order System (Python)
 
-🌐 ## Overview
+## 🌐 Overview
 This project implements a Kafka-based system producing and consuming Avro order messages with:
 - Real-time aggregation (running average of prices)
 - Retry logic for transient failures
